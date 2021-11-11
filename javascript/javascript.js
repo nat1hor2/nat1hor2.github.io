@@ -24,6 +24,7 @@ function createTask() {
     listButton.style.display = "none";
     listButton.setAttribute("id", "bruh");
     itemInList.appendChild(listButton);
+    itemInList.onclick = ()=> {itemInList.remove();}
     listButton.onclick = function() {
         itemInList.remove();
     }
